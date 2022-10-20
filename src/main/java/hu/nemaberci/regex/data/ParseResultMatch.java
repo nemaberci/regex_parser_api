@@ -14,4 +14,8 @@ public class ParseResultMatch {
         this.end = end;
     }
 
+    @Override
+    public String toString() {
+        return "(" + start + ", " + end + ")";
+    }
 }

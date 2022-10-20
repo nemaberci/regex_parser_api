@@ -11,4 +11,6 @@ public @interface RegularExpression {
 
     String value() default "";
 
+    boolean lazy() default true;
+
 }

@@ -11,6 +11,10 @@ public class ParseResult {
         return matching;
     }
 
+    public List<ParseResultMatch> getMatches() {
+        return matches;
+    }
+
     public ParseResult(boolean matching) {
         this.matching = matching;
         this.matches = null;

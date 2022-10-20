@@ -4,6 +4,7 @@ import hu.nemaberci.regex.data.ParseResult;
 
 public interface RegexParser {
 
-    ParseResult match(String str);
+    ParseResult findMatches(String str);
+    boolean matches(String str);
 
 }
