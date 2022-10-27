@@ -1,17 +1,17 @@
 package hu.nemaberci.regex.data;
 
-import java.util.List;
+import java.util.Collection;
 
 public class ParseResult {
 
     private final boolean matching;
-    private final List<ParseResultMatch> matches;
+    private final Collection<ParseResultMatch> matches;
 
     public boolean isMatching() {
         return matching;
     }
 
-    public List<ParseResultMatch> getMatches() {
+    public Collection<ParseResultMatch> getMatches() {
         return matches;
     }
 
@@ -20,7 +20,7 @@ public class ParseResult {
         this.matches = null;
     }
 
-    public ParseResult(List<ParseResultMatch> matches) {
+    public ParseResult(Collection<ParseResultMatch> matches) {
         this.matches = matches;
         this.matching = !matches.isEmpty();
     }
